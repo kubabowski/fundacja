@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Mail footer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      table {
+        margin: 40px;
+      }
+
+      * {
+        font-family: Montserrat;
+        padding: 0;
+      }
+
+      .vertical-line-1,
+      .vertical-line-2 {
+        height: 168px;
+        width: 2px;
+        background-color: #20a5aa;
+        margin-right: 7px;
+        display: inline-block;
+      }
+
+      .vertical-line-1 {
+        margin-left: 40px;
+      }
+
+      .vertical-line-2 {
+        margin-left: 7px;
+        margin-right: 40px;
+      }
+
+      .person-name {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #9a0000;
+      }
+
+      .person-position {
+        font-weight: 600;
+        font-style: italic;
+        font-size: 10px;
+        line-height: 12px;
+        color: #103488;
+      }
+
+      .person-mail,
+      .person-tel,
+      .address,
+      .nip,
+      .krs {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        color: #103488;
+      }
+
+      .company-name {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        color: #9a0000;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <td rowspan="7">
+            <img src="./logo.png" alt="logo" />
+          </td>
+          <td rowspan="8">
+            <div class="vertical-line-1"></div>
+            <div class="vertical-line-2"></div>
+          </td>
+          <td colspan="2">
+            <span class="person-name">dr n. med. Michał Witkowski</span>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <span class="person-position">Prezes Zarządu</span>
+          </td>
+        </tr>
+        <tr>
+          <td height="12" colspan="2">
+            <span class="person-mail"
+              >michal.witkowski@fundacja.hematologiczna.org</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td height="12" colspan="2">
+            <span class="person-tel">tel.: +48 600 888 333</span>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <span class="company-name"
+              >Fundacja Na Rzecz Pomocy <br />Chorym Na Białaczki</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="3">
+            <span class="address">93-513 Łódź, ul. Pabianicka 62</span><br />
+            <span class="nip">NIP 729-23-25-734</span><br />
+            <span class="krs">KRS 0000069531</span>
+          </td>
+          <td rowspan="3">
+            <img src="./qr-code.png" alt="qr-code" />
+          </td>
+        </tr>
+        <tr></tr>
+        <tr>
+          <td>
+            <img src="./website.png" alt="website" />
+            <img src="./facebook.png" alt="facebook" />
+            <img src="./lin.png" alt="lin" />
+            <img src="./youtube.png" alt="youtube" />
+            <img src="./instagram.png" alt="instagram" />
+          </td>
+        </tr>
+      </thead>
+    </table>
+  </body>
+</html>
