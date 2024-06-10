@@ -13,112 +13,50 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <style>
-      table {
-        margin: 40px;
-      }
-
-      * {
-        font-family: Montserrat;
-        padding: 0;
-      }
-
-      .vertical-line-1,
-      .vertical-line-2 {
-        height: 168px;
-        width: 2px;
-        background-color: #20a5aa;
-        margin-right: 7px;
-        display: inline-block;
-      }
-
-      .vertical-line-1 {
-        margin-left: 40px;
-      }
-
-      .vertical-line-2 {
-        margin-left: 7px;
-        margin-right: 40px;
-      }
-
-      .person-name {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 17px;
-        color: #9a0000;
-      }
-
-      .person-position {
-        font-weight: 600;
-        font-style: italic;
-        font-size: 10px;
-        line-height: 12px;
-        color: #103488;
-      }
-
-      .person-mail,
-      .person-tel,
-      .address,
-      .nip,
-      .krs {
-        font-weight: 400;
-        font-size: 10px;
-        line-height: 12px;
-        color: #103488;
-      }
-
-      .company-name {
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 15px;
-        color: #9a0000;
-      }
-    </style>
+    
   </head>
-  <body>
-    <table>
+  <body style="font-family: Montserrat; padding: 0;">
+    <table style="margin: 40px;">
       <thead>
         <tr>
           <td rowspan="7">
             <img src="./logo.png" alt="logo" />
           </td>
           <td rowspan="8">
-            <div class="vertical-line-1"></div>
-            <div class="vertical-line-2"></div>
+            <div style="height: 168px; width: 2px; background-color: #20a5aa; margin-right: 7px; display: inline-block; margin-left: 40px;"></div>
+            <div style="height: 168px; width: 2px; background-color: #20a5aa; margin-right: 7px; display: inline-block; margin-left: 7px; margin-right: 40px;"></div>
           </td>
           <td colspan="2">
-            <span class="person-name">dr n. med. Michał Witkowski</span>
+            <span style="font-size: 14px; line-height: 17px; color: #9a0000;"><strong>%%FirstName%% %%LastName%%</strong></span>
           </td>
         </tr>
         <tr>
           <td colspan="2">
-            <span class="person-position">Prezes Zarządu</span>
+            <span style="font-weight: 600; font-size: 10px; line-height: 12px; color: #103488;"><i>%%Title%%</i></span>
           </td>
         </tr>
         <tr>
           <td height="12" colspan="2">
-            <span class="person-mail"
-              >michal.witkowski@fundacja.hematologiczna.org</span
+            <span style="font-size: 10px; line-height: 12px; color: #103488;">%%Email%%</span
             >
           </td>
         </tr>
         <tr>
           <td height="12" colspan="2">
-            <span class="person-tel">tel.: +48 600 888 333</span>
+            <span style="font-size: 10px; line-height: 12px; color: #103488;">tel.: %%MobileNumber%%</span>
           </td>
         </tr>
         <tr>
           <td colspan="2">
-            <span class="company-name"
-              >Fundacja Na Rzecz Pomocy <br />Chorym Na Białaczki</span
+            <span style="font-size: 12px; line-height: 15px; color: #9a0000;"><strong>Fundacja Na Rzecz Pomocy <br />Chorym Na Białaczki</strong></span
             >
           </td>
         </tr>
         <tr>
           <td rowspan="3">
-            <span class="address">93-513 Łódź, ul. Pabianicka 62</span><br />
-            <span class="nip">NIP 729-23-25-734</span><br />
-            <span class="krs">KRS 0000069531</span>
+            <span style="font-size: 10px; line-height: 12px; color: #103488;">93-513 Łódź, ul. Pabianicka 62</span><br />
+            <span style="font-size: 10px; line-height: 12px; color: #103488;">NIP 729-23-25-734</span><br />
+            <span style="font-size: 10px; line-height: 12px; color: #103488;">KRS 0000069531</span>
           </td>
           <td rowspan="3">
             <img src="./qr-code.png" alt="qr-code" />
@@ -127,11 +65,21 @@
         <tr></tr>
         <tr>
           <td>
-            <img src="./website.png" alt="website" />
-            <img src="./facebook.png" alt="facebook" />
-            <img src="./lin.png" alt="lin" />
-            <img src="./youtube.png" alt="youtube" />
-            <img src="./instagram.png" alt="instagram" />
+              <a href="https://fundacja.hematologiczna.org/">
+                <img src="./website.png" alt="website" />
+            </a>
+            <a href="https://www.facebook.com/Fundacja.Hematologiczna">
+                <img src="./facebook.png" alt="facebook" />
+            </a>
+            <a href="https://www.linkedin.com/company/fundacja-na-rzecz-pomocy-chorym-na-bia%C5%82aczki">
+                <img src="./lin.png" alt="lin" />
+            </a>
+            <a href="https://www.youtube.com/@FundacjaHematologiczna">
+                <img src="./youtube.png" alt="youtube" />
+            </a>
+            <a href="https://www.instagram.com/fundacja.hematologiczna/">
+                <img src="./instagram.png" alt="instagram" />
+            </a>
           </td>
         </tr>
       </thead>
